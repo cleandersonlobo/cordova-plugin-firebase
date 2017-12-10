@@ -27,6 +27,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
      *
      * @param remoteMessage Object representing the message received from Firebase Cloud Messaging.
      */
+/*
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         // [START_EXCLUDE]
@@ -71,7 +72,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
             sendNotification(id, title, text, remoteMessage.getData(), showNotification);
         }
     }
-
+*/
     private void sendNotification(String id, String title, String messageBody, Map<String, String> data, boolean showNotification) {
         Bundle bundle = new Bundle();
         for (String key : data.keySet()) {
